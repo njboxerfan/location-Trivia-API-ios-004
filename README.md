@@ -9,8 +9,9 @@ languages: objc
 
 Every Pair needs an API Key to have their own little Location Trivia world.
 
-| Parter Names  | API Key                                  |
+| Partner Names | API Key                                  |
 |---------------|------------------------------------------|
+| Al/Matt       |                                          |
 | Marcus/Ray    | 474dc75e3d4a6b67a8e053930c10fd26f6e920b9 |
 | Heidi/Mike V  | 906a60f5cad51547e571002cd1bba4fa886e6df9 |
 | Leo/Zach      | 3b400cdf66b6c4aa6317080bc728452be0921afb |
