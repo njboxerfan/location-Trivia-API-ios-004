@@ -9,15 +9,15 @@ languages: objc
 
 Every Pair needs an API Key to have their own little Location Trivia world.
 
-Al/Matt: **4e096caa9d62444e1bbf9f84c9594bb0d2536227**
-Marcus/Ray: **474dc75e3d4a6b67a8e053930c10fd26f6e920b9**
-Heidi/Mike V: **906a60f5cad51547e571002cd1bba4fa886e6df9**
-Leo/Zach: **3b400cdf66b6c4aa6317080bc728452be0921afb**
-Peter/Tarik: **5f3f20fd994bfa7ff0adf7a4c73454cb267be81e**
-Carter/Viktor: **d8e3c881f1641c24e0349752354b3900bf114635**
-Troy/Dan: **bc5284d4def0d4bd4a8f0d88c681cf4b4987bef8**
-Mike H/Steve: **ad49ec6eef8ec5f7d53cdbafa2414d0570e8f9de**
-
+| Parter Names  | API Key                                  |
+|---------------|------------------------------------------|
+| Marcus/Ray    | 474dc75e3d4a6b67a8e053930c10fd26f6e920b9 |
+| Heidi/Mike V  | 906a60f5cad51547e571002cd1bba4fa886e6df9 |
+| Leo/Zach      | 3b400cdf66b6c4aa6317080bc728452be0921afb |
+| Peter/Tarik   | 5f3f20fd994bfa7ff0adf7a4c73454cb267be81e |
+| Carter/Dan    | d8e3c881f1641c24e0349752354b3900bf114635 |
+| Troy/Steve    | bc5284d4def0d4bd4a8f0d88c681cf4b4987bef8 |
+| Mike H/Viktor | ad49ec6eef8ec5f7d53cdbafa2414d0570e8f9de |
 
 ## The API
 
