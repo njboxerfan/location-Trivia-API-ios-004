@@ -156,4 +156,4 @@ DELETE /locations/:location_id.json
         NSLog(@"Fail");
     }];
   ```
-    4. Implement [swipe to deelte](http://stackoverflow.com/questions/3309484/uitableviewcell-show-delete-button-on-swipe) for each location.
+4. Implement [swipe to deelte](http://stackoverflow.com/questions/3309484/uitableviewcell-show-delete-button-on-swipe) for each location.
