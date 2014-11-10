@@ -23,7 +23,7 @@ Every Pair needs an API Key to have their own little Location Trivia world.
 
 ## The API
 
-All requests must be made with a `key` url parameter.
+All requests must be made with a `key` url parameter. The base url is `http://locationtrivia.herokuapp.com/`. To us the Web interface just go to `http://locationtrivia.herokuapp.com/locations?key=<YOUR KEY HERE>`
 
 ### Reading From The Api
 
@@ -146,7 +146,7 @@ DELETE /locations/:location_id.json
      and then when you reload the app those items should show up on your
      tableview. For you first edition, I'd just put the code in the Data Store
      (preferable) or you can just get it to work in your View Controller.
-  2. Now let's be able to add Locations. Create a new method that sends the appropriate API request to the backend. You'll have to send parameters. Thankfully this is pretty easy with AFNetworking. You'll notice that the method we use has a `params` input. For the `GET` request we did, we put nil in as the params item. The params takes in an `NSDictionary` of keys and values. So if we wanted to do a `POST` request to google.com giving it parameters with a key of `query` and a value of `The Internet` we'd do this:
+  2. Now let's be able to add Locations. Create a new method that sends the appropriate API request to the backend. You'll have to send parameters. Thankfully this is pretty easy with `AFNetworking`. You'll notice that the method we use has a `params` input. For the `GET` request we did, we put nil in as the params item. The params takes in an `NSDictionary` of keys and values. So if we wanted to do a `POST` request to google.com giving it parameters with a key of `query` and a value of `The Internet` we'd do this:
 
   ```
   NSDictionary *postParams = @{@"query": @"The Internet"};
@@ -156,3 +156,4 @@ DELETE /locations/:location_id.json
         NSLog(@"Fail");
     }];
   ```
+    3. Implement [swipe to deelte](http://stackoverflow.com/questions/3309484/uitableviewcell-show-delete-button-on-swipe) for each location.
