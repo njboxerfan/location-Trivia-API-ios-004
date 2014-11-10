@@ -140,13 +140,13 @@ DELETE /locations/:location_id.json
 ```
 
 ## Instructions
-
-  1. Let's keep things simple. First things first, let's use the API as a
+  1. First convert your LocationTrivia to be CoreData Backed.
+  2. Let's keep things simple. First things first, let's use the API as a
      backend for the existing LocationTrivia. Add items on the web interface,
      and then when you reload the app those items should show up on your
      tableview. For you first edition, I'd just put the code in the Data Store
      (preferable) or you can just get it to work in your View Controller.
-  2. Now let's be able to add Locations. Create a new method that sends the appropriate API request to the backend. You'll have to send parameters. Thankfully this is pretty easy with `AFNetworking`. You'll notice that the method we use has a `params` input. For the `GET` request we did, we put nil in as the params item. The params takes in an `NSDictionary` of keys and values. So if we wanted to do a `POST` request to google.com giving it parameters with a key of `query` and a value of `The Internet` we'd do this:
+  3. Now let's be able to add Locations. Create a new method that sends the appropriate API request to the backend. You'll have to send parameters. Thankfully this is pretty easy with `AFNetworking`. You'll notice that the method we use has a `params` input. For the `GET` request we did, we put nil in as the params item. The params takes in an `NSDictionary` of keys and values. So if we wanted to do a `POST` request to google.com giving it parameters with a key of `query` and a value of `The Internet` we'd do this:
 
   ```
   NSDictionary *postParams = @{@"query": @"The Internet"};
@@ -156,4 +156,4 @@ DELETE /locations/:location_id.json
         NSLog(@"Fail");
     }];
   ```
-    3. Implement [swipe to deelte](http://stackoverflow.com/questions/3309484/uitableviewcell-show-delete-button-on-swipe) for each location.
+    4. Implement [swipe to deelte](http://stackoverflow.com/questions/3309484/uitableviewcell-show-delete-button-on-swipe) for each location.
