@@ -9,16 +9,17 @@ languages: objc
 
 Every Pair needs an API Key to have their own little Location Trivia world.
 
-| Partner Names | API Key                                  |
-|---------------|------------------------------------------|
-| Al/Matt       |                                          |
-| Marcus/Ray    | 474dc75e3d4a6b67a8e053930c10fd26f6e920b9 |
-| Heidi/Mike V  | 906a60f5cad51547e571002cd1bba4fa886e6df9 |
-| Leo/Zach      | 3b400cdf66b6c4aa6317080bc728452be0921afb |
-| Peter/Tarik   | 5f3f20fd994bfa7ff0adf7a4c73454cb267be81e |
-| Carter/Dan    | d8e3c881f1641c24e0349752354b3900bf114635 |
-| Troy/Steve    | bc5284d4def0d4bd4a8f0d88c681cf4b4987bef8 |
-| Mike H/Viktor | ad49ec6eef8ec5f7d53cdbafa2414d0570e8f9de |
+| Partner             | API Key                                  |
+|------------------|------------------------------------------|
+| Suma/Tamar/Levan | f870d8df08c31b90085290b6875866a50d2459f7 |
+| Charles/Cathy    | 60cf9b8cb6f665ce9c652ae2b70a09b15554531f |
+| Jan/Karim        | faba5e7582ed5ce004f85438f6673f181033c8e6 |
+| Elliot/Dan W     | 56a90f738656e2374e56debaf4065f27446f3dd9 |
+| Rich/Orr         | 7f9b9d733608d95267756b5fcd47784ec57900c4 |
+| Mykel/Blake      | 2248eac9ab318ebcf7eb7217c9df7e4b078594ad |
+| Rosa/Dan B       | 2facfd9e9707d8910f227977c8620ba6886d8129 |
+| Louis/Xida       | 4a9faaf3fb4d7cacee555b5e52eb12fd9ab1ca03 |
+| Zak/Ismail       | 32f5fb769729ff0982fd3af912ff270857069c76 |
 
 ## The API
 
