@@ -11,15 +11,22 @@ Every Pair needs an API Key to have their own little Location Trivia world.
 
 | Partner             | API Key                                  |
 |------------------|------------------------------------------|
-| Suma/Tamar/Levan | f870d8df08c31b90085290b6875866a50d2459f7 |
-| Charles/Cathy    | 60cf9b8cb6f665ce9c652ae2b70a09b15554531f |
-| Jan/Karim        | faba5e7582ed5ce004f85438f6673f181033c8e6 |
-| Elliot/Dan W     | 56a90f738656e2374e56debaf4065f27446f3dd9 |
-| Rich/Orr         | 7f9b9d733608d95267756b5fcd47784ec57900c4 |
-| Mykel/Blake      | 2248eac9ab318ebcf7eb7217c9df7e4b078594ad |
-| Rosa/Dan B       | 2facfd9e9707d8910f227977c8620ba6886d8129 |
-| Louis/Xida       | 4a9faaf3fb4d7cacee555b5e52eb12fd9ab1ca03 |
-| Zak/Ismail       | 32f5fb769729ff0982fd3af912ff270857069c76 |
+| Joe M | 8efafff01e66130686fb5a76ac9f99abfb55103a |
+| Tom O | b78a1d25384c3671e19e8c019639b948f1c73b50 |
+| Anish | 700e337294287d9d7281cfa5118c1cbd48672bae |
+| Mark | 3806b0c1f68709feddfaa9747606c97b2d9ad4ca |
+| Bobby | 26f66f4361cefdc4f61ff6de4a501a471742b94f |
+| Jim | 4884f098b2eb01ac21ff346a9c480600a00b6df4 |
+| Justin | ecb7a8d78a8a63d5be0a281a456b751ac1ad523b |
+| Shmo | 72f30d520fff3835c0e555a3c986f80097611906 |
+| Bert | 2a539bd87955fa8bab488604ba15bac3f119be9e |
+| Damon | b4a3aa50638487077c57c142834607572b9fdbf2 |
+| Nick | 29a7c25f985174cc828695e7812b5681543f9ccf |
+| Kavan | d088e02a82b1ce55ea77405342f4ee09cc933f1c |
+| Tom P | e53f5077129b204d29eb302a56474e1267dc7ed3 |
+| Cooper | d57cdcbc4be184914d099c8ca6e0501b1ac01d10 |
+| Nelly | 38be54967779040afcd10e7bb6100a2eabc8cdf2 |
+| Ian | 09c3579b6eb3e85f69d2c46834dc6b45f382c602 |
 
 ## The API
 
