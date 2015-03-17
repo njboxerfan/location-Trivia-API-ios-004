@@ -10,6 +10,7 @@
 
 @interface FISTrivia : NSObject
 
+@property (strong, nonatomic) NSString *triviaID;
 @property (strong, nonatomic) NSString *content;
 @property (nonatomic) NSInteger likes;
 

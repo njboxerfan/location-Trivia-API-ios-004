@@ -11,6 +11,7 @@
 
 @interface FISLocation : NSObject
 
+@property (strong, nonatomic) NSString *locationID;
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSNumber *latitude;
 @property (strong, nonatomic) NSNumber *longitude;

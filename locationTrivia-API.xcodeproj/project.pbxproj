@@ -1,500 +1,1360 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		D80594AD1976F1B300116B35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D80594AC1976F1B300116B35 /* Foundation.framework */; };
-		D80594AF1976F1B300116B35 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D80594AE1976F1B300116B35 /* CoreGraphics.framework */; };
-		D80594B11976F1B300116B35 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D80594B01976F1B300116B35 /* UIKit.framework */; };
-		D80594B71976F1B300116B35 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D80594B51976F1B300116B35 /* InfoPlist.strings */; };
-		D80594B91976F1B300116B35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D80594B81976F1B300116B35 /* main.m */; };
-		D80594C51976F1B300116B35 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D80594C41976F1B300116B35 /* Images.xcassets */; };
-		D80594CC1976F1B300116B35 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D80594CB1976F1B300116B35 /* XCTest.framework */; };
-		D80594CD1976F1B300116B35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D80594AC1976F1B300116B35 /* Foundation.framework */; };
-		D80594CE1976F1B300116B35 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D80594B01976F1B300116B35 /* UIKit.framework */; };
-		D80594D61976F1B300116B35 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D80594D41976F1B300116B35 /* InfoPlist.strings */; };
-		D80594D81976F1B300116B35 /* locationTrivia_APITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D80594D71976F1B300116B35 /* locationTrivia_APITests.m */; };
-		D80594F21976F1D000116B35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D80594E11976F1D000116B35 /* Main.storyboard */; };
-		D80594F31976F1D000116B35 /* FISAddTriviaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D80594E31976F1D000116B35 /* FISAddTriviaViewController.m */; };
-		D80594F41976F1D000116B35 /* FISAddLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D80594E51976F1D000116B35 /* FISAddLocationViewController.m */; };
-		D80594F51976F1D000116B35 /* FISLocationsDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D80594E71976F1D000116B35 /* FISLocationsDataStore.m */; };
-		D80594F61976F1D000116B35 /* FISAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D80594E91976F1D000116B35 /* FISAppDelegate.m */; };
-		D80594F71976F1D000116B35 /* FISLocationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D80594EB1976F1D000116B35 /* FISLocationsTableViewController.m */; };
-		D80594F81976F1D000116B35 /* FISTriviaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D80594ED1976F1D000116B35 /* FISTriviaTableViewController.m */; };
-		D80594F91976F1D000116B35 /* FISLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = D80594EF1976F1D000116B35 /* FISLocation.m */; };
-		D80594FA1976F1D000116B35 /* FISTrivia.m in Sources */ = {isa = PBXBuildFile; fileRef = D80594F11976F1D000116B35 /* FISTrivia.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D80594CF1976F1B300116B35 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D80594A11976F1B300116B35 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D80594A81976F1B300116B35;
-			remoteInfo = "locationTrivia-API";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		D80594A91976F1B300116B35 /* locationTrivia-API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "locationTrivia-API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D80594AC1976F1B300116B35 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D80594AE1976F1B300116B35 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		D80594B01976F1B300116B35 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		D80594B41976F1B300116B35 /* locationTrivia-API-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "locationTrivia-API-Info.plist"; sourceTree = "<group>"; };
-		D80594B61976F1B300116B35 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D80594B81976F1B300116B35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D80594BA1976F1B300116B35 /* locationTrivia-API-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "locationTrivia-API-Prefix.pch"; sourceTree = "<group>"; };
-		D80594C41976F1B300116B35 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D80594CA1976F1B300116B35 /* locationTrivia-APITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "locationTrivia-APITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D80594CB1976F1B300116B35 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D80594D31976F1B300116B35 /* locationTrivia-APITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "locationTrivia-APITests-Info.plist"; sourceTree = "<group>"; };
-		D80594D51976F1B300116B35 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D80594D71976F1B300116B35 /* locationTrivia_APITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = locationTrivia_APITests.m; sourceTree = "<group>"; };
-		D80594E11976F1D000116B35 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		D80594E21976F1D000116B35 /* FISAddTriviaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISAddTriviaViewController.h; sourceTree = "<group>"; };
-		D80594E31976F1D000116B35 /* FISAddTriviaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISAddTriviaViewController.m; sourceTree = "<group>"; };
-		D80594E41976F1D000116B35 /* FISAddLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISAddLocationViewController.h; sourceTree = "<group>"; };
-		D80594E51976F1D000116B35 /* FISAddLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISAddLocationViewController.m; sourceTree = "<group>"; };
-		D80594E61976F1D000116B35 /* FISLocationsDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISLocationsDataStore.h; sourceTree = "<group>"; };
-		D80594E71976F1D000116B35 /* FISLocationsDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISLocationsDataStore.m; sourceTree = "<group>"; };
-		D80594E81976F1D000116B35 /* FISAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISAppDelegate.h; sourceTree = "<group>"; };
-		D80594E91976F1D000116B35 /* FISAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISAppDelegate.m; sourceTree = "<group>"; };
-		D80594EA1976F1D000116B35 /* FISLocationsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISLocationsTableViewController.h; sourceTree = "<group>"; };
-		D80594EB1976F1D000116B35 /* FISLocationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISLocationsTableViewController.m; sourceTree = "<group>"; };
-		D80594EC1976F1D000116B35 /* FISTriviaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISTriviaTableViewController.h; sourceTree = "<group>"; };
-		D80594ED1976F1D000116B35 /* FISTriviaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISTriviaTableViewController.m; sourceTree = "<group>"; };
-		D80594EE1976F1D000116B35 /* FISLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISLocation.h; sourceTree = "<group>"; };
-		D80594EF1976F1D000116B35 /* FISLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISLocation.m; sourceTree = "<group>"; };
-		D80594F01976F1D000116B35 /* FISTrivia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISTrivia.h; sourceTree = "<group>"; };
-		D80594F11976F1D000116B35 /* FISTrivia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISTrivia.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		D80594A61976F1B300116B35 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D80594AF1976F1B300116B35 /* CoreGraphics.framework in Frameworks */,
-				D80594B11976F1B300116B35 /* UIKit.framework in Frameworks */,
-				D80594AD1976F1B300116B35 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D80594C71976F1B300116B35 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D80594CC1976F1B300116B35 /* XCTest.framework in Frameworks */,
-				D80594CE1976F1B300116B35 /* UIKit.framework in Frameworks */,
-				D80594CD1976F1B300116B35 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		D80594A01976F1B300116B35 = {
-			isa = PBXGroup;
-			children = (
-				D80594B21976F1B300116B35 /* locationTrivia-API */,
-				D80594D11976F1B300116B35 /* locationTrivia-APITests */,
-				D80594AB1976F1B300116B35 /* Frameworks */,
-				D80594AA1976F1B300116B35 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		D80594AA1976F1B300116B35 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D80594A91976F1B300116B35 /* locationTrivia-API.app */,
-				D80594CA1976F1B300116B35 /* locationTrivia-APITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D80594AB1976F1B300116B35 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D80594AC1976F1B300116B35 /* Foundation.framework */,
-				D80594AE1976F1B300116B35 /* CoreGraphics.framework */,
-				D80594B01976F1B300116B35 /* UIKit.framework */,
-				D80594CB1976F1B300116B35 /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D80594B21976F1B300116B35 /* locationTrivia-API */ = {
-			isa = PBXGroup;
-			children = (
-				D80594E11976F1D000116B35 /* Main.storyboard */,
-				D80594E21976F1D000116B35 /* FISAddTriviaViewController.h */,
-				D80594E31976F1D000116B35 /* FISAddTriviaViewController.m */,
-				D80594E41976F1D000116B35 /* FISAddLocationViewController.h */,
-				D80594E51976F1D000116B35 /* FISAddLocationViewController.m */,
-				D80594E61976F1D000116B35 /* FISLocationsDataStore.h */,
-				D80594E71976F1D000116B35 /* FISLocationsDataStore.m */,
-				D80594E81976F1D000116B35 /* FISAppDelegate.h */,
-				D80594E91976F1D000116B35 /* FISAppDelegate.m */,
-				D80594EA1976F1D000116B35 /* FISLocationsTableViewController.h */,
-				D80594EB1976F1D000116B35 /* FISLocationsTableViewController.m */,
-				D80594EC1976F1D000116B35 /* FISTriviaTableViewController.h */,
-				D80594ED1976F1D000116B35 /* FISTriviaTableViewController.m */,
-				D80594EE1976F1D000116B35 /* FISLocation.h */,
-				D80594EF1976F1D000116B35 /* FISLocation.m */,
-				D80594F01976F1D000116B35 /* FISTrivia.h */,
-				D80594F11976F1D000116B35 /* FISTrivia.m */,
-				D80594C41976F1B300116B35 /* Images.xcassets */,
-				D80594B31976F1B300116B35 /* Supporting Files */,
-			);
-			path = "locationTrivia-API";
-			sourceTree = "<group>";
-		};
-		D80594B31976F1B300116B35 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D80594B41976F1B300116B35 /* locationTrivia-API-Info.plist */,
-				D80594B51976F1B300116B35 /* InfoPlist.strings */,
-				D80594B81976F1B300116B35 /* main.m */,
-				D80594BA1976F1B300116B35 /* locationTrivia-API-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D80594D11976F1B300116B35 /* locationTrivia-APITests */ = {
-			isa = PBXGroup;
-			children = (
-				D80594D71976F1B300116B35 /* locationTrivia_APITests.m */,
-				D80594D21976F1B300116B35 /* Supporting Files */,
-			);
-			path = "locationTrivia-APITests";
-			sourceTree = "<group>";
-		};
-		D80594D21976F1B300116B35 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D80594D31976F1B300116B35 /* locationTrivia-APITests-Info.plist */,
-				D80594D41976F1B300116B35 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		D80594A81976F1B300116B35 /* locationTrivia-API */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D80594DB1976F1B300116B35 /* Build configuration list for PBXNativeTarget "locationTrivia-API" */;
-			buildPhases = (
-				D80594A51976F1B300116B35 /* Sources */,
-				D80594A61976F1B300116B35 /* Frameworks */,
-				D80594A71976F1B300116B35 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "locationTrivia-API";
-			productName = "locationTrivia-API";
-			productReference = D80594A91976F1B300116B35 /* locationTrivia-API.app */;
-			productType = "com.apple.product-type.application";
-		};
-		D80594C91976F1B300116B35 /* locationTrivia-APITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D80594DE1976F1B300116B35 /* Build configuration list for PBXNativeTarget "locationTrivia-APITests" */;
-			buildPhases = (
-				D80594C61976F1B300116B35 /* Sources */,
-				D80594C71976F1B300116B35 /* Frameworks */,
-				D80594C81976F1B300116B35 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D80594D01976F1B300116B35 /* PBXTargetDependency */,
-			);
-			name = "locationTrivia-APITests";
-			productName = "locationTrivia-APITests";
-			productReference = D80594CA1976F1B300116B35 /* locationTrivia-APITests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		D80594A11976F1B300116B35 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = FIS;
-				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = "Joe Burgess";
-				TargetAttributes = {
-					D80594C91976F1B300116B35 = {
-						TestTargetID = D80594A81976F1B300116B35;
-					};
-				};
-			};
-			buildConfigurationList = D80594A41976F1B300116B35 /* Build configuration list for PBXProject "locationTrivia-API" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = D80594A01976F1B300116B35;
-			productRefGroup = D80594AA1976F1B300116B35 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				D80594A81976F1B300116B35 /* locationTrivia-API */,
-				D80594C91976F1B300116B35 /* locationTrivia-APITests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		D80594A71976F1B300116B35 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D80594F21976F1D000116B35 /* Main.storyboard in Resources */,
-				D80594C51976F1B300116B35 /* Images.xcassets in Resources */,
-				D80594B71976F1B300116B35 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D80594C81976F1B300116B35 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D80594D61976F1B300116B35 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		D80594A51976F1B300116B35 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D80594F31976F1D000116B35 /* FISAddTriviaViewController.m in Sources */,
-				D80594F81976F1D000116B35 /* FISTriviaTableViewController.m in Sources */,
-				D80594F41976F1D000116B35 /* FISAddLocationViewController.m in Sources */,
-				D80594F91976F1D000116B35 /* FISLocation.m in Sources */,
-				D80594B91976F1B300116B35 /* main.m in Sources */,
-				D80594F61976F1D000116B35 /* FISAppDelegate.m in Sources */,
-				D80594F51976F1D000116B35 /* FISLocationsDataStore.m in Sources */,
-				D80594FA1976F1D000116B35 /* FISTrivia.m in Sources */,
-				D80594F71976F1D000116B35 /* FISLocationsTableViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D80594C61976F1B300116B35 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D80594D81976F1B300116B35 /* locationTrivia_APITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D80594D01976F1B300116B35 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D80594A81976F1B300116B35 /* locationTrivia-API */;
-			targetProxy = D80594CF1976F1B300116B35 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		D80594B51976F1B300116B35 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D80594B61976F1B300116B35 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		D80594D41976F1B300116B35 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D80594D51976F1B300116B35 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		D80594D91976F1B300116B35 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		D80594DA1976F1B300116B35 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		D80594DC1976F1B300116B35 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "locationTrivia-API/locationTrivia-API-Prefix.pch";
-				INFOPLIST_FILE = "locationTrivia-API/locationTrivia-API-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		D80594DD1976F1B300116B35 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "locationTrivia-API/locationTrivia-API-Prefix.pch";
-				INFOPLIST_FILE = "locationTrivia-API/locationTrivia-API-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		D80594DF1976F1B300116B35 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/locationTrivia-API.app/locationTrivia-API";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "locationTrivia-API/locationTrivia-API-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "locationTrivia-APITests/locationTrivia-APITests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		D80594E01976F1B300116B35 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/locationTrivia-API.app/locationTrivia-API";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "locationTrivia-API/locationTrivia-API-Prefix.pch";
-				INFOPLIST_FILE = "locationTrivia-APITests/locationTrivia-APITests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		D80594A41976F1B300116B35 /* Build configuration list for PBXProject "locationTrivia-API" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D80594D91976F1B300116B35 /* Debug */,
-				D80594DA1976F1B300116B35 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D80594DB1976F1B300116B35 /* Build configuration list for PBXNativeTarget "locationTrivia-API" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D80594DC1976F1B300116B35 /* Debug */,
-				D80594DD1976F1B300116B35 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		D80594DE1976F1B300116B35 /* Build configuration list for PBXNativeTarget "locationTrivia-APITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D80594DF1976F1B300116B35 /* Debug */,
-				D80594E01976F1B300116B35 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = D80594A11976F1B300116B35 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>052193D21CC6EFDEC7F7E432</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>42CDC508C1896285D1339484</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F4B8D42774ED6C3AE9B2FAE5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6DED761544D1096F99E5E543</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>983AC729F3C6D7CCD3343BFD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A0437C501AB8853700CFDFC7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FISConstants.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A0437C511AB8853700CFDFC7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FISConstants.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A0437C521AB8853700CFDFC7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A0437C511AB8853700CFDFC7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>BF9BC4BCB5557B9EFA7AA380</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>983AC729F3C6D7CCD3343BFD</string>
+				<string>052193D21CC6EFDEC7F7E432</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594A01976F1B300116B35</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D80594B21976F1B300116B35</string>
+				<string>D80594D11976F1B300116B35</string>
+				<string>D80594AB1976F1B300116B35</string>
+				<string>D80594AA1976F1B300116B35</string>
+				<string>BF9BC4BCB5557B9EFA7AA380</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594A11976F1B300116B35</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>FIS</string>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Joe Burgess</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>D80594C91976F1B300116B35</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>D80594A81976F1B300116B35</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>D80594A41976F1B300116B35</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>D80594A01976F1B300116B35</string>
+			<key>productRefGroup</key>
+			<string>D80594AA1976F1B300116B35</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>D80594A81976F1B300116B35</string>
+				<string>D80594C91976F1B300116B35</string>
+			</array>
+		</dict>
+		<key>D80594A41976F1B300116B35</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>D80594D91976F1B300116B35</string>
+				<string>D80594DA1976F1B300116B35</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>D80594A51976F1B300116B35</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D80594F31976F1D000116B35</string>
+				<string>D80594F81976F1D000116B35</string>
+				<string>D80594F41976F1D000116B35</string>
+				<string>D80594F91976F1D000116B35</string>
+				<string>D80594B91976F1B300116B35</string>
+				<string>D80594F61976F1D000116B35</string>
+				<string>A0437C521AB8853700CFDFC7</string>
+				<string>D80594F51976F1D000116B35</string>
+				<string>D80594FA1976F1D000116B35</string>
+				<string>D80594F71976F1D000116B35</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D80594A61976F1B300116B35</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D80594AF1976F1B300116B35</string>
+				<string>D80594B11976F1B300116B35</string>
+				<string>D80594AD1976F1B300116B35</string>
+				<string>42CDC508C1896285D1339484</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D80594A71976F1B300116B35</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D80594F21976F1D000116B35</string>
+				<string>D80594C51976F1B300116B35</string>
+				<string>D80594B71976F1B300116B35</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D80594A81976F1B300116B35</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>D80594DB1976F1B300116B35</string>
+			<key>buildPhases</key>
+			<array>
+				<string>E1600F766D47848ECAF35EF4</string>
+				<string>D80594A51976F1B300116B35</string>
+				<string>D80594A61976F1B300116B35</string>
+				<string>D80594A71976F1B300116B35</string>
+				<string>6DED761544D1096F99E5E543</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>locationTrivia-API</string>
+			<key>productName</key>
+			<string>locationTrivia-API</string>
+			<key>productReference</key>
+			<string>D80594A91976F1B300116B35</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>D80594A91976F1B300116B35</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>locationTrivia-API.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>D80594AA1976F1B300116B35</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D80594A91976F1B300116B35</string>
+				<string>D80594CA1976F1B300116B35</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594AB1976F1B300116B35</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D80594AC1976F1B300116B35</string>
+				<string>D80594AE1976F1B300116B35</string>
+				<string>D80594B01976F1B300116B35</string>
+				<string>D80594CB1976F1B300116B35</string>
+				<string>F4B8D42774ED6C3AE9B2FAE5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594AC1976F1B300116B35</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>D80594AD1976F1B300116B35</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D80594AC1976F1B300116B35</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D80594AE1976F1B300116B35</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>D80594AF1976F1B300116B35</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D80594AE1976F1B300116B35</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D80594B01976F1B300116B35</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>D80594B11976F1B300116B35</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D80594B01976F1B300116B35</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D80594B21976F1B300116B35</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D80594E11976F1D000116B35</string>
+				<string>D80594E21976F1D000116B35</string>
+				<string>D80594E31976F1D000116B35</string>
+				<string>D80594E41976F1D000116B35</string>
+				<string>D80594E51976F1D000116B35</string>
+				<string>D80594E61976F1D000116B35</string>
+				<string>D80594E71976F1D000116B35</string>
+				<string>D80594E81976F1D000116B35</string>
+				<string>D80594E91976F1D000116B35</string>
+				<string>D80594EA1976F1D000116B35</string>
+				<string>D80594EB1976F1D000116B35</string>
+				<string>D80594EC1976F1D000116B35</string>
+				<string>D80594ED1976F1D000116B35</string>
+				<string>D80594EE1976F1D000116B35</string>
+				<string>D80594EF1976F1D000116B35</string>
+				<string>D80594F01976F1D000116B35</string>
+				<string>D80594F11976F1D000116B35</string>
+				<string>A0437C501AB8853700CFDFC7</string>
+				<string>A0437C511AB8853700CFDFC7</string>
+				<string>D80594C41976F1B300116B35</string>
+				<string>D80594B31976F1B300116B35</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>locationTrivia-API</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594B31976F1B300116B35</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D80594B41976F1B300116B35</string>
+				<string>D80594B51976F1B300116B35</string>
+				<string>D80594B81976F1B300116B35</string>
+				<string>D80594BA1976F1B300116B35</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594B41976F1B300116B35</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>locationTrivia-API-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594B51976F1B300116B35</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D80594B61976F1B300116B35</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594B61976F1B300116B35</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594B71976F1B300116B35</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D80594B51976F1B300116B35</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D80594B81976F1B300116B35</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594B91976F1B300116B35</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D80594B81976F1B300116B35</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D80594BA1976F1B300116B35</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>locationTrivia-API-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594C41976F1B300116B35</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594C51976F1B300116B35</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D80594C41976F1B300116B35</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D80594C61976F1B300116B35</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D80594D81976F1B300116B35</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D80594C71976F1B300116B35</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D80594CC1976F1B300116B35</string>
+				<string>D80594CE1976F1B300116B35</string>
+				<string>D80594CD1976F1B300116B35</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D80594C81976F1B300116B35</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D80594D61976F1B300116B35</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D80594C91976F1B300116B35</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>D80594DE1976F1B300116B35</string>
+			<key>buildPhases</key>
+			<array>
+				<string>D80594C61976F1B300116B35</string>
+				<string>D80594C71976F1B300116B35</string>
+				<string>D80594C81976F1B300116B35</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>D80594D01976F1B300116B35</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>locationTrivia-APITests</string>
+			<key>productName</key>
+			<string>locationTrivia-APITests</string>
+			<key>productReference</key>
+			<string>D80594CA1976F1B300116B35</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>D80594CA1976F1B300116B35</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>locationTrivia-APITests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>D80594CB1976F1B300116B35</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>D80594CC1976F1B300116B35</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D80594CB1976F1B300116B35</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D80594CD1976F1B300116B35</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D80594AC1976F1B300116B35</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D80594CE1976F1B300116B35</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D80594B01976F1B300116B35</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D80594CF1976F1B300116B35</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D80594A11976F1B300116B35</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>D80594A81976F1B300116B35</string>
+			<key>remoteInfo</key>
+			<string>locationTrivia-API</string>
+		</dict>
+		<key>D80594D01976F1B300116B35</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>D80594A81976F1B300116B35</string>
+			<key>targetProxy</key>
+			<string>D80594CF1976F1B300116B35</string>
+		</dict>
+		<key>D80594D11976F1B300116B35</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D80594D71976F1B300116B35</string>
+				<string>D80594D21976F1B300116B35</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>locationTrivia-APITests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594D21976F1B300116B35</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D80594D31976F1B300116B35</string>
+				<string>D80594D41976F1B300116B35</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594D31976F1B300116B35</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>locationTrivia-APITests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594D41976F1B300116B35</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D80594D51976F1B300116B35</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594D51976F1B300116B35</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594D61976F1B300116B35</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D80594D41976F1B300116B35</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D80594D71976F1B300116B35</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>locationTrivia_APITests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594D81976F1B300116B35</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D80594D71976F1B300116B35</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D80594D91976F1B300116B35</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>D80594DA1976F1B300116B35</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>D80594DB1976F1B300116B35</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>D80594DC1976F1B300116B35</string>
+				<string>D80594DD1976F1B300116B35</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>D80594DC1976F1B300116B35</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>983AC729F3C6D7CCD3343BFD</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>locationTrivia-API/locationTrivia-API-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>locationTrivia-API/locationTrivia-API-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>D80594DD1976F1B300116B35</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>052193D21CC6EFDEC7F7E432</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>locationTrivia-API/locationTrivia-API-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>locationTrivia-API/locationTrivia-API-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>D80594DE1976F1B300116B35</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>D80594DF1976F1B300116B35</string>
+				<string>D80594E01976F1B300116B35</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>D80594DF1976F1B300116B35</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/locationTrivia-API.app/locationTrivia-API</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>locationTrivia-API/locationTrivia-API-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>locationTrivia-APITests/locationTrivia-APITests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>D80594E01976F1B300116B35</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/locationTrivia-API.app/locationTrivia-API</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>locationTrivia-API/locationTrivia-API-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>locationTrivia-APITests/locationTrivia-APITests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>D80594E11976F1D000116B35</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>path</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594E21976F1D000116B35</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FISAddTriviaViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594E31976F1D000116B35</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FISAddTriviaViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594E41976F1D000116B35</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FISAddLocationViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594E51976F1D000116B35</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FISAddLocationViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594E61976F1D000116B35</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FISLocationsDataStore.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594E71976F1D000116B35</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FISLocationsDataStore.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594E81976F1D000116B35</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FISAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594E91976F1D000116B35</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FISAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594EA1976F1D000116B35</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FISLocationsTableViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594EB1976F1D000116B35</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FISLocationsTableViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594EC1976F1D000116B35</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FISTriviaTableViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594ED1976F1D000116B35</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FISTriviaTableViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594EE1976F1D000116B35</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FISLocation.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594EF1976F1D000116B35</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FISLocation.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594F01976F1D000116B35</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FISTrivia.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594F11976F1D000116B35</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FISTrivia.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D80594F21976F1D000116B35</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D80594E11976F1D000116B35</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D80594F31976F1D000116B35</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D80594E31976F1D000116B35</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D80594F41976F1D000116B35</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D80594E51976F1D000116B35</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D80594F51976F1D000116B35</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D80594E71976F1D000116B35</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D80594F61976F1D000116B35</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D80594E91976F1D000116B35</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D80594F71976F1D000116B35</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D80594EB1976F1D000116B35</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D80594F81976F1D000116B35</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D80594ED1976F1D000116B35</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D80594F91976F1D000116B35</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D80594EF1976F1D000116B35</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D80594FA1976F1D000116B35</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D80594F11976F1D000116B35</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E1600F766D47848ECAF35EF4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>F4B8D42774ED6C3AE9B2FAE5</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>D80594A11976F1B300116B35</string>
+</dict>
+</plist>
