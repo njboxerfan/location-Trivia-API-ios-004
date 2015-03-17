@@ -146,8 +146,53 @@ DELETE /locations/:location_id.json
 204 No Content
 ```
 
+#### Creating Trivia
+
+##### Request
+
+```
+POST /locations/:location_id/trivia.json
+```
+
+###### Parameters
+
+| Key                 | Value Data Type | Description                   |
+|---------------------|-----------------|-------------------------------|
+| trivium[content]    | string          | The content of the trivia     |
+
+##### Response
+
+```
+{
+    "id": 102,
+    "content": "This is my second trivium",
+    "created_at": "2014-07-17T17:56:55.918Z",
+    "updated_at": "2014-07-17T17:56:55.918Z",
+    "location": {
+        "id": 129,
+        "name": "Statue Of Liberty",
+        "latitude": 40.6892,
+        "longitude": -74.0444,
+        "created_at": "2014-07-17T14:18:03.611Z",
+        "updated_at": "2014-07-17T14:18:03.611Z"
+    }
+}
+```
+##### Deleting Trivia
+
+###### Request 
+
+```
+DELETE /locations/:location_id/trivia/:trivia_id.json
+```
+
+###### Response
+
+```
+204 No Content
+```
+
 ## Instructions
-  1. First convert your LocationTrivia to be CoreData Backed.
   2. Let's keep things simple. First things first, let's use the API as a backend for the existing LocationTrivia. Add items on the web interface, and then when you reload the app those items should show up on your tableview. For you first edition, I'd just put the code in the Data Store (preferable) or you can just get it to work in your View Controller.
   3. Now let's be able to add Locations. Create a new method that sends the appropriate API request to the backend. You'll have to send parameters. Thankfully this is pretty easy with `AFNetworking`. You'll notice that the method we use has a `params` input. For the `GET` request we did, we put nil in as the params item. The params takes in an `NSDictionary` of keys and values. So if we wanted to do a `POST` request to google.com giving it parameters with a key of `query` and a value of `The Internet` we'd do this:
 
@@ -159,4 +204,6 @@ DELETE /locations/:location_id.json
         NSLog(@"Fail");
     }];
   ```
-  4. Implement [swipe to deelte](http://stackoverflow.com/questions/3309484/uitableviewcell-show-delete-button-on-swipe) for each location.
+  4. Now Add the Update functionality
+  5. Implement [swipe to deelte](http://stackoverflow.com/questions/3309484/uitableviewcell-show-delete-button-on-swipe) for each location.
+
