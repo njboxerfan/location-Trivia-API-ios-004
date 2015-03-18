@@ -7,6 +7,7 @@
 //
 
 #import "FISLocationsDataStore.h"
+#import "FISTriviaAPIClient.h"
 #import <AFNetworking.h>
 
 @implementation FISLocationsDataStore
@@ -33,18 +34,13 @@
 
 -(void)getLocations:(void (^)(void))completionBlock
 {
-    NSString *triviaURL = [NSString stringWithFormat:@"%@/locations.json?key=%@",TRIVIA_API_URL,TRIVIA_API_KEY];
-    
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    
-    [manager GET:triviaURL parameters:nil success:^(NSURLSessionDataTask *task, id responseObject)
-    {
-        //NSLog(@"%@", responseObject);
-        for ( NSDictionary *locationDictionary in responseObject )
+    [FISTriviaAPIClient getLocationsWithCompletion:^(NSArray *locationDictionaries) {
+        
+        for ( NSDictionary *locationDictionary in locationDictionaries )
         {
             FISLocation *location = [[FISLocation alloc] initWithName:locationDictionary[@"name"]
-                                                              Latitude:locationDictionary[@"latitude"]
-                                                             Longitude:locationDictionary[@"longitude"]];
+                                                             Latitude:locationDictionary[@"latitude"]
+                                                            Longitude:locationDictionary[@"longitude"]];
             
             location.locationID = locationDictionary[@"id"];
             
@@ -59,101 +55,57 @@
         }
         
         completionBlock();
-        
-    } failure:^(NSURLSessionDataTask *task, NSError *error)
-    {
-        NSLog(@"Fail: %@",error.localizedDescription);
     }];
 }
 
 -(void)saveLocation:(FISLocation *)newLocation
 {
-    NSString *triviaURL = [NSString stringWithFormat:@"%@/locations.json?key=%@",TRIVIA_API_URL,TRIVIA_API_KEY];
-    
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    
-    NSDictionary *parameters = @{@"location[name]":newLocation.name,
-                                 @"location[latitude]":newLocation.latitude,
-                                 @"location[longitude]":newLocation.longitude};
-    
-    [manager POST:triviaURL parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject)
-     {
-         //NSLog(@"%@", responseObject);
-         NSDictionary *response = responseObject;
-         
-         newLocation.locationID = response[@"id"];
-         
-         [self.locations addObject:newLocation];
-         
-         //notify FISLocationsTableViewController
-         [[NSNotificationCenter defaultCenter] postNotificationName:@"locationReload" object:nil];
-         
-     } failure:^(NSURLSessionDataTask *task, NSError *error)
-     {
-         NSLog(@"Fail: %@",error.localizedDescription);
-     }];
+    [FISTriviaAPIClient saveLocation:newLocation withCompletion:^(NSDictionary *responseObject) {
+        
+        NSDictionary *response = responseObject;
+        
+        newLocation.locationID = response[@"id"];
+        
+        [self.locations addObject:newLocation];
+        
+        //notify FISLocationsTableViewController
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"locationReload" object:nil];
+    }];
 }
 
 -(void)deleteLocation:(FISLocation *)location withCompletion:(void (^)(void))completionBlock
 {
-    NSString *triviaURL = [NSString stringWithFormat:@"%@/locations/%@.json?key=%@",TRIVIA_API_URL,location.locationID,TRIVIA_API_KEY];
-    
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    
-    [manager DELETE:triviaURL parameters:nil success:^(NSURLSessionDataTask *task, id responseObject)
-    {
-        [self.locations removeObject:location];
-
-        completionBlock();
+    [FISTriviaAPIClient deleteLocation:location withCompletion:^{
         
-    } failure:^(NSURLSessionDataTask *task, NSError *error)
-    {
-        NSLog(@"Fail: %@",error.localizedDescription);
+        [self.locations removeObject:location];
+        
+        completionBlock();
     }];
 }
 
 +(void)saveTrivia:(FISTrivia *)newTrivia forLocation:(FISLocation *)location
 {
-    NSString *triviaURL = [NSString stringWithFormat:@"%@/locations/%@/trivia.json?key=%@",TRIVIA_API_URL,location.locationID,TRIVIA_API_KEY];
-    
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    
-    NSDictionary *parameters = @{@"trivium[content]":newTrivia.content};
-    
-    [manager POST:triviaURL parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject)
-     {
-         //NSLog(@"%@", responseObject);
-         NSDictionary *response = responseObject;
-         
-         newTrivia.triviaID = response[@"id"];
-         
-         [location.trivia addObject:newTrivia];
-         
-         //notify FISTriviaTableViewController
-         [[NSNotificationCenter defaultCenter] postNotificationName:@"triviaReload" object:nil];
-         
-     } failure:^(NSURLSessionDataTask *task, NSError *error)
-     {
-         NSLog(@"Fail: %@",error.localizedDescription);
-     }];
+    [FISTriviaAPIClient saveTrivia:newTrivia forLocation:location withCompletion:^(NSDictionary *responseObject) {
+        
+        NSDictionary *response = responseObject;
+        
+        newTrivia.triviaID = response[@"id"];
+        
+        [location.trivia addObject:newTrivia];
+        
+        //notify FISTriviaTableViewController
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"triviaReload" object:nil];
+    }];
 }
 
 +(void)deleteTrivia:(FISTrivia *)trivia forLocation:(FISLocation *)location withCompletion:(void (^)(void))completionBlock
 {
-    NSString *triviaURL = [NSString stringWithFormat:@"%@/locations/%@/trivia/%@.json?key=%@",TRIVIA_API_URL,location.locationID,trivia.triviaID,TRIVIA_API_KEY];
-    
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    
-    [manager DELETE:triviaURL parameters:nil success:^(NSURLSessionDataTask *task, id responseObject)
-     {
-         [location.trivia removeObject:trivia];
-         
-         completionBlock();
-         
-     } failure:^(NSURLSessionDataTask *task, NSError *error)
-     {
-         NSLog(@"Fail: %@",error.localizedDescription);
-     }];
+    [FISTriviaAPIClient deleteTrivia:trivia forLocation:location withCompletion:^ {
+        
+        [location.trivia removeObject:trivia];
+        
+        completionBlock();
+    }];
 }
 
 @end
